@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Remind U",
+  "description": "Quick launch Remind U",
+  "version": "1.0.0",
+  "icons": { "16": "images/icon16.png",
+    "48": "images/icon48.png",
+   "128": "images/icon128.png" },
+  "browser_action": {
+    "default_icon": "images/icon128.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "storage", "notifications", "context-menus"]
+}
