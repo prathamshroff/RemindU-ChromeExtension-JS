@@ -45,7 +45,7 @@ function timeChecker() {
     let minutes = today.getMinutes();
     for (let i = 0; i < array.length; i++) {
         if (array[i].hours === hours && array[i].minutes === minutes) {
-            console.log(array[i].toString());
+            document.getElementById("rand_reminder").innerHTML = array[i].toString());
             let x = array[i];
             let y = array[array.length-1];
             array[i] = y;
@@ -54,20 +54,20 @@ function timeChecker() {
         }
     }
     if (hours === 20 && minutes === 45) {
-        document.getElementById("demo").innerHTML = "Test Case Up";
+        document.getElementById("rand_reminder").innerHTML = "Test Case Up";
     }
     if (hours === 9 && minutes === 0) {
-        document.getElementById("demo").innerHTML = "Have you woken up yet?";
+        document.getElementById("rand_reminder").innerHTML = "Have you woken up yet?";
     } else if (hours === 10 && minutes === 0) {
-        document.getElementById("demo").innerHTML = "Have you eaten yet?";
+        document.getElementById("rand_reminder").innerHTML = "Have you eaten yet?";
     } else if (hours === 11 && minutes === 0) {
-        document.getElementById("demo").innerHTML = "Remember to take a break!";
+        document.getElementById("rand_reminder").innerHTML = "Remember to take a break!";
     } else if (hours === 12 && minutes === 0) {
         let msg = getMessage();
         if (msg === "Would you like to set a reminder?: ") {
-            document.getElementById("demo").innerHTML = msg;
+            document.getElementById("rand_reminder").innerHTML = msg;
         } else {
-            document.getElementById("demo").innerHTML = msg;
+            document.getElementById("rand_reminder").innerHTML = msg;
         }
     } else if (hours === 13 && minutes === 0) {
         console.log("Have you eaten yet? If you haven't, eat!");
