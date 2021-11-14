@@ -45,7 +45,7 @@ function timeChecker() {
     let minutes = today.getMinutes();
     for (let i = 0; i < array.length; i++) {
         if (array[i].hours === hours && array[i].minutes === minutes) {
-            document.getElementById("rand_reminder").innerHTML = array[i].toString());
+            document.getElementById("rand_reminder").innerHTML = array[i].toString();
             let x = array[i];
             let y = array[array.length-1];
             array[i] = y;
