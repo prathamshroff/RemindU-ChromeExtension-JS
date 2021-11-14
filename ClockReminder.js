@@ -53,26 +53,21 @@ function timeChecker() {
             array.pop();
         }
     }
-    if (hours === 19 && minutes === 25) {
-        const r = new Reminder(7, 26, "PM", "Reminder");
-        console.log("Testing...");
-        console.log(r.toString());
-        array.push(r);
+    if (hours === 20 && minutes === 45) {
+        document.getElementById("demo").innerHTML = "Test Case Up";
     }
     if (hours === 9 && minutes === 0) {
-        console.log("Have you woken up yet?");
+        document.getElementById("demo").innerHTML = "Have you woken up yet?";
     } else if (hours === 10 && minutes === 0) {
-        console.log("Have you eaten yet?");
+        document.getElementById("demo").innerHTML = "Have you eaten yet?";
     } else if (hours === 11 && minutes === 0) {
-        console.log("Remember to take a break!");
+        document.getElementById("demo").innerHTML = "Remember to take a break!";
     } else if (hours === 12 && minutes === 0) {
         let msg = getMessage();
-        console.log(msg);
         if (msg === "Would you like to set a reminder?: ") {
-            const input = prompt();
-            if (input === "yes" || input === "Yes") {
-
-            }
+            document.getElementById("demo").innerHTML = msg;
+        } else {
+            document.getElementById("demo").innerHTML = msg;
         }
     } else if (hours === 13 && minutes === 0) {
         console.log("Have you eaten yet? If you haven't, eat!");
