@@ -18,9 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (hour === 0) {
             hour = 12;
         }
+        // alert(`Your reminder is: ${reminder} at ${hour} & ${min} & ${meridian}`);
+
+        //  9 , 0, AM, pratham
 
         const r = new Reminder(hour, min, meridian, reminder);
-
-        alert(`Your reminder is: ${reminder} at ${hour} & ${min} & ${meridian}`);
+        array.push(r);
+        
     };
 });
