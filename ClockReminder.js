@@ -37,6 +37,11 @@ class Reminder {
 
 }
 
+function addReminder(Reminder r){
+    array.push(r);
+}
+
+
 
 function timeChecker() {
     let today = new Date();
