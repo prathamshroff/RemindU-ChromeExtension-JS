@@ -1,1 +1,1 @@
-# remind-u-chrome-ext
+# Remind U - Chrome Extension
